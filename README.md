@@ -1,0 +1,2 @@
+# Numerical_calculation_by_python
+C言語による数値計算入門のPython版
