@@ -1,9 +1,9 @@
 import numpy as np
 
 #行列
-a=np.array([[1,2,1,1],[4,5,-2,4],[4,3,-3,1],[2,1,1,3]])
+a=np.array([[1,2,1,1],[4,5,-2,4],[4,3,-3,1],[2,1,1,3]]).astype(float)
 #ベクトル
-b=np.array([-1,-7,-12,2])
+b=np.array([-1,-7,-12,2]).astype(float)
 
 #解
 x=np.zeros((a.shape[0]))
@@ -12,6 +12,7 @@ x=np.zeros((a.shape[0]))
 for k in range(0,a.shape[0]-1,1):
     for i in range(k+1,a.shape[0],1):
         alpha=-a[i,k]/a[k,k]
+        ###変形後の係数行列を確認したいため、j=kから計算
         for j in range(k,a.shape[1],1):
             a[i,j]=a[i,j]+a[k,j]*alpha
         b[i]=b[i]+b[k]*alpha
