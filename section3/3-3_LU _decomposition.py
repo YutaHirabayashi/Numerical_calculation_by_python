@@ -39,7 +39,7 @@ for k in range(0,a.shape[0]-1,1):
     for i in range(k+1,a.shape[0],1):
         alpha=-a[i,k]/a[k,k]
         
-        #L行列(逆行列なので-がつく)
+        #L行列(三角行列の逆行列なので-がつく)
         a[i,k]=-alpha
 
         #U行列
