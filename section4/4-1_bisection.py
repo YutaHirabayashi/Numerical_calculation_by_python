@@ -1,3 +1,7 @@
+
+#誤差評価に関するTaylor展開を用いた解説
+#https://qiita.com/Ren112358/items/f2c0bbc90810c040a2e5
+
 import numpy as np
 
 #f(x)の定義
